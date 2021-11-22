@@ -1,0 +1,181 @@
+body {
+  margin: 10px;
+  background-color: #181b1a;
+}
+
+/**********/
+/* navbar */
+/**********/
+
+.navbar {
+  overflow: hidden;
+  background-color: rgba(12, 12, 12, 0.5);
+  position: fixed; /*makes the element stay on the same part of the screen when scrolling*/
+  top: 0px; /*makes element up against the top of the screen*/
+  left: 0px; /*makes the element up against the left side of the screen*/
+  width: auto;
+  border-bottom-right-radius: 10px;
+}
+
+.navbar a {
+  font-family: Helvetica, sans-serif;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Changes the color of text and background of navbar elements when hovering over them */
+.navbar a:hover {
+  background: rgba(221, 221, 221, 0.5);
+  color: black;
+}
+
+/* Makes the active page highlited slightly */
+.navbar a.active {
+  background-color: hsla(0, 0%, 51%, 0.4);
+  color: white;
+}
+
+/****************/
+/* page content */
+/****************/
+
+img {
+  border-color: chocolate;
+  border-style: double;
+  max-width: 100%;
+}
+
+p.reuqweroiuqer {
+  border: blue;
+  border-width: 5px;
+  border-style: double;
+  padding: 10%;
+}
+
+.textleft {
+  text-align: left;
+}
+
+.textright {
+  text-align: right;
+}
+
+.textcenter {
+  text-align: center;
+}
+
+p {
+  color: #bbb3a7;
+  font-family: Arial, sans-serif;
+  word-break: normal;
+  white-space: normal;
+  font-size: 20px;
+}
+
+h1 {
+  font-family: Arial, sans-serif;
+  margin: 10px;
+  color: #a78bea;
+  font-size: 40px;
+}
+
+h2 {
+  font-family: Arial, sans-serif;
+  margin: 10px;
+  color: #c3324c;
+  font-size: 35px;
+}
+
+hr.h1 {
+  height: 2px;
+  border-width: 0;
+  width: 20%;
+  color: #363636;
+  background-color: #363636;
+}
+
+hr.h2 {
+  height: 2px;
+  border-width: 0;
+  width: 30%;
+  color: #2c2c2c;
+  background-color: #2c2c2c;
+}
+
+/*********/
+/* div's */
+/*********/
+
+div.main {
+  /*class for div that contains all of the page content*/
+  padding: 16px;
+  margin-top: 50px; /*top margin so content isn't inside of the navbar*/
+}
+
+/*contains most of the infor1mation, is centered and has max and min width*/
+div.centered {
+  margin: auto;
+  min-width: 500px;
+  max-width: 900px;
+  overflow: hidden;
+}
+
+div.left {
+  margin-left: 0px;
+  width: 30%;
+  float: left;
+  border-color: blue;
+  border-style: double;
+  border-width: 2px;
+}
+
+div.right {
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-left: auto;
+  float: right;
+  width: 30%;
+  border-color: blue;
+  border-style: double;
+  border-width: 2px;
+}
+
+div.mid {
+  margin-top: 0px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 30%;
+  border-color: blue;
+  border-style: double;
+  border-width: 2px;
+}
+
+
+/******************************************/
+/* Dropdown menu's for extra points maybe */
+/******************************************/
+
+/* copied from https://www.w3schools.com/css/css_dropdowns.asp */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
