@@ -1,1 +1,1 @@
-<?php header( 'Location: /index.himl' ) : ?>
+<?php header( 'Location: /index.html' ) : ?>
